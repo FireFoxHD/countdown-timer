@@ -270,7 +270,7 @@ h2{
 	transform: scale(1);
 }
 #firework1 .explosion::before {
-	animation: explosion 5s ease-in-out infinite;
+	animation: explosion 5s 1.5s ease-in-out infinite;
 }
 
 #firework2 {
@@ -279,7 +279,7 @@ h2{
 	transform: scale(.7);
 }
 #firework2 .explosion::before {
-	animation: explosion 5s .6s ease-in-out infinite;
+	animation: explosion 5s 2.1s ease-in-out infinite;
 }
 
 #firework3 {
@@ -288,5 +288,5 @@ h2{
 	transform: scale(.4);
 }
 #firework3 .explosion::before {
-	animation: explosion 5s .4s ease-in-out infinite;
+	animation: explosion 5s 1.9s ease-in-out infinite;
 }
