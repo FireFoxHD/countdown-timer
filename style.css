@@ -1,0 +1,182 @@
+body{
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #222831;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.counter-container{
+    display: flex;
+    align-items: center;
+
+}
+
+h1{
+    color: #eeeeee;
+    font-size: 4em;
+}
+
+.container{  
+    padding: 20px;
+    height: 25vh;
+    width: 25vh;
+    text-align: center;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1em;
+    margin: 40px;
+}
+
+.time{
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 6em;
+    margin: 0;
+}
+
+h2{
+    margin: 0px;
+    color: #eeeeee;
+    font-size: 1.3em;
+}
+
+.second-container{
+    border-color:#F05454;
+}
+
+.minute-container{
+    border-color: #FF7B54;
+}
+
+.hour-container{
+    border-color:#FFD369;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #eeeeee;
+}
+
+.message > *{
+    margin: 0px;
+}
+
+.message > div {
+    font-weight: bold;
+    font-size: 250px;
+}
+
+.msg{
+    font-weight: bold;
+    font-size: 100px;
+}
+
+
+/*  */
+
+@keyframes grow{
+    0%{
+        transform: rotate(xx);
+        opacity: 0;
+        color: #fff;
+        font-size: 50px;
+        }
+    50%{
+        transform: rotate(xx);
+        font-size: 50;
+        }
+    100%{
+        transform: rotate(xx);
+        opacity: 1;
+        color: #e63946;
+        font-size: 250;
+        }
+}
+
+.message > div {
+    animation: grow 1s forwards 0s ease-in;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: rotate(xx);
+        opacity: 0;
+        }
+    53%{
+        transform: rotate(xx);
+        opacity: 0;
+        font-size: 50;
+        }
+    91%{
+        transform: rotate(xx);
+        opacity: 1;
+        font-size: 50;
+        }
+    100%{
+        transform: rotate(xx);
+        opacity: 1;
+        font-size: 100;
+        }
+}
+
+.msg{
+    animation: fadeIn 1s forwards 0s ease-in;
+}
+
+.quote{
+    font-size: 18px;
+    padding-top: 50px;
+    width: 50%;
+}
+
+
+@keyframes quote{
+    0%{
+        transform: rotate(xx);
+        opacity: 0;
+        }
+    90%{
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx);
+        opacity: 1;
+        }
+}
+
+.quote{
+    animation: quote 1.25s forwards 0s linear;
+}
+
+.hidden{
+    display:none;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .container>h2{
+        padding: 0;
+    }
+    .counter-container{
+        flex-direction: column;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .time{
+        font-size: 2em;
+    }
+}
