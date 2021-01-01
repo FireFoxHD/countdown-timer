@@ -46,7 +46,7 @@ h1{
 h2{
     margin: 0px;
     color: #eeeeee;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .second-container{
@@ -59,6 +59,10 @@ h2{
 
 .hour-container{
     border-color:#FFD369;
+}
+
+.day-container{
+    border-color:#0bd80b;
 }
 
 .message{

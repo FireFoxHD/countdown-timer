@@ -1,4 +1,4 @@
-let checkDate = new Date("January 1, 2021 00:00:00").getTime();
+let checkDate = new Date("January 1, 2022 00:00:00").getTime();
 let counterContainer = document.getElementById("counter");
 let title = document.getElementById("title");
 let message = document.getElementById("message");
@@ -24,6 +24,7 @@ let x = setInterval(function() {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
+  document.getElementById("day").textContent = days;
   document.getElementById("hour").textContent = hours;
   document.getElementById("minute").textContent = minutes;
   document.getElementById("second").textContent = seconds;
