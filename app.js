@@ -1,4 +1,4 @@
-let checkDate = new Date("January 1, 2021 00:00:00").getTime();
+let checkDate = new Date("January 1, 2022 00:00:00").getTime();
 let counterContainer = document.getElementById("counter");
 let title = document.getElementById("title");
 let message = document.getElementById("message");
